@@ -9,14 +9,13 @@
 // Non è necessario provvedere alla validazione delle email
 
 const mailList = ["pippo@mail.com", "paperino@mail.com", "topolino@mail.com"];
-let isMailOnList = true; //boolean value set to false that will be changed in cases that i need
+let isMailOnList = true; //boolean value set to true that will be changed in cases that i need
 
 let userMail = prompt("inserisci la tua mail:", "pippo@mail.com");
 
 for (i = 0; i < mailList.length; i++) {
     if (userMail == mailList[i]) {
         isMailOnList = false;
-
     }
 }
 
@@ -25,3 +24,4 @@ if (isMailOnList == false) {
 } else {
     console.log(`la tua ${userMail} non è presente nella ${mailList}`);
 }
+
